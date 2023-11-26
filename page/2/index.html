@@ -1,0 +1,319 @@
+<!DOCTYPE html><html lang="[&quot;zh-CN&quot;,&quot;zh-tw&quot;,&quot;en&quot;,&quot;default&quot;]" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>个人博客 - 长风破浪会有时，直挂云帆济沧海。</title><meta name="author" content="Docker"><meta name="copyright" content="Docker"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="个人博客">
+<meta property="og:url" content="http://example.com/page/2/index.html">
+<meta property="og:site_name" content="个人博客">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/images/avatar.jpg">
+<meta property="article:author" content="Docker">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/avatar.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/page/2/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '个人博客',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: true,
+  isToc: false,
+  postUpdate: '2023-11-26 20:38:43'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/images/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">26</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">24</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">19</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 生活</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/shuoshuo/"><i class="fa-fw fas fa-share"></i><span> 分享</span></a></li><li><a class="site-page child" href="/photos/"><i class="fa-fw fa fa-camera-retro"></i><span> 相册</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 影视</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('https://jsd.012700.xyz/gh/jerryc127/butterfly_cdn@2.1.0/top_img/index.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="个人博客"><span class="site-name">个人博客</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 生活</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/shuoshuo/"><i class="fa-fw fas fa-share"></i><span> 分享</span></a></li><li><a class="site-page child" href="/photos/"><i class="fa-fw fa fa-camera-retro"></i><span> 相册</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 影视</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">个人博客</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/liuwenzhensunniwell" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:xxxxxx@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/11/26/mode%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/" title="maven &quot;Generating project in Batch mode&quot;问题的解决">maven &quot;Generating project in Batch mode&quot;问题的解决</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-11-26T10:42:30.000Z" title="发表于 2023-11-26 18:42:30">2023-11-26</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Java%E9%97%AE%E9%A2%98%E9%9B%86/">Java问题集</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/Java%E9%97%AE%E9%A2%98%E9%9B%86/maven/">maven</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/maven/">maven</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E9%97%AE%E9%A2%98%E9%9B%86/">问题集</a></span></div><div class="content">在maven的五分钟入门里面，有这样一个命令：
+1mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+这句话的命令是创建一个默认的项目，但我在执行这个命令时，命令行会停在
+[INFO] Generating project in Batch mode这句话会停很久。【当然，也有人的一下就过去。】
+增加一个-X参数，可以查看详细信息
+1mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false -X
+
+可以看到，程序停在了下面这一行。
+12[DEBUG] Searching for remote catalog: http://r ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/11/26/Vue-js/" title="Vue.js">Vue.js</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-11-26T10:40:59.000Z" title="发表于 2023-11-26 18:40:59">2023-11-26</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF/Vue/">Vue</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Vue/">Vue</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E6%96%B9%E6%A1%88/">前后端分离方案</a></span></div><div class="content">Vue.js开发模式：
+CDN
+
+NPM
+
+在用 Vue 构建大型应用时推荐使用 NPM 。NPM 能很好地和诸如 webpack 或 Browserify 模块打包器配合使用。同时 Vue 也提供配套工具来开发单文件组件
+
+
+
+学习开发工具：Visual Studio Code工具下载网址：Visual Studio Code下载地址
+
+装好软件后装几个插件：1、Live Server为静态和动态页面启动带有实时重新加载功能的开发本地服务器
+
+2、Vetur用于VS代码的Vue工具
+3、Vue.js with TypeScript Snippets for VSCode使用SFC或基于类的API (vscode)的TypeScript收集Vue.js的代码片段
+
+设置一下工具：
+加上（可以格式化代码）：  “editor.formatOnType”: true,  “editor.formatOnSave”: true,  
+
+Vue-CDN的使用
+创建项目（创建一个文件夹：vue-basic-cdn）
+创建三个资源：index.html、app.js、styles.cssapp.j ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/11/26/Android%E5%BC%80%E5%8F%91/" title="Android开发">Android开发</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-11-26T10:39:46.000Z" title="发表于 2023-11-26 18:39:46">2023-11-26</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Android/">Android</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Android/">Android</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/Java/">Java</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/APP/">APP</a></span></div><div class="content">activity的管理：复习：定义一个activity—— 创建一个Activity子类——重写Activity中的onCreate方法—— 在AndroidManifest.xml中的Activity进行注册
+启动一个Activity——创建Intent意图对象（可以理解成一个封装对象）——调用setClass设置要启动哪个Activity——调用startActivity进行跳转
+BackStack回退栈1、先进后出	2、方便记录后维护
+Menu分类：选项菜单(OptionMenu)上下文菜单(ContextMenu)弹出菜单(PopupMenu)OptionMenu：showAsAction属性值：always：直接在标题显示
+never：不显示
+withText：控制图标贺文本一起显示
+ifRoot：有空间就显示
+
+1234567891011121314151617181920//创建OptionMenu  @Override  public boolean onCreateOptionsMenu(Menu menu) &#123;      //加载资源文件      get ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/11/26/vue%E5%AF%B9seo%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88Nuxt-js/" title="vue对seo的解决方案Nuxt.js">vue对seo的解决方案Nuxt.js</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-11-26T10:37:12.000Z" title="发表于 2023-11-26 18:37:12">2023-11-26</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%89%8D%E7%AB%AF/">前端</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/">技术方案</a></span></div><div class="content">一、搜索引擎优化1、什么是SEO总结：seo是网站为了提高自已的网站排名，获得更多的流量，对网站的结构及内容进行调整和优化，以便搜索引擎 （百度，google等）更好抓取到优质网站的内容。
+2、搜索引擎工作流程常见的SEO方法比如：
+
+对url链接的规范化，多用restful风格的url，多用静态资源url；注意keywords、description、title的设置；h1-h6、a标签的使用等等注意：spider对javascript支持不好，ajax获取的JSON数据无法被spider爬取采用什么技术有利于SEO？要解答这个问题需要理解服务端渲染和客户端渲染。
+
+二、服务端渲染和客户端渲染1、什么是服务端渲染服务端渲染又称SSR (Server Side Render)是在服务端完成页面的内容渲染，而不是在客户端完成页面内容的渲染。
+SSR并不是前端特有的技术，我们学习过的JSP技术和Thymeleaf技术就是典型的SSR服务端渲染的特点：
+
+在服务端生成html网页的dom元素 
+客户端（浏览器）只负责显示dom元素内容
+
+2、什么是客户端渲染客户端（浏览器） 使用AJAX向服 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/11/26/Spring-Boot%E6%A1%86%E6%9E%B6/" title="Spring Boot框架">Spring Boot框架</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-11-26T10:35:17.000Z" title="发表于 2023-11-26 18:35:17">2023-11-26</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Java/">Java</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/Java/Spring-Boot/">Spring Boot</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Java/">Java</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/Spring-Boot/">Spring Boot</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/Java%E6%A1%86%E6%9E%B6/">Java框架</a></span></div><div class="content">Spring Boot：
+通过Spring Boot，可以轻松地创建独立的，基于生产级别的基于Spring的应用程序，您可以“运行”它们。
+
+我们对Spring平台和第三方库持固执己见的观点，因此您可以以最小的麻烦开始使用。大多数Spring Boot应用程序需要最少的Spring配置。
+
+
+Spring Boot核心特性:
+极低的学习成本
+可独立运行的Spring项目
+“习惯优于配置”，极大的提高了开发效率
+极简的组件依赖，自动发现与自己装配
+提供运行时的应用监控
+与分布式架构和云计算的天然集成
+
+搭建Spring Boot项目
+JDK需要是8以上的版本1、创建目录，导入jar包123456789101112131415161718192021222324252627282930313233&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot;         xmlns:xsi=&qu ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/11/26/Vue%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" title="Vue环境搭建">Vue环境搭建</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-11-26T09:14:36.000Z" title="发表于 2023-11-26 17:14:36">2023-11-26</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Vue/">Vue</a></span></div><div class="content">Vue.js官网：vue.js官网1、使用工具：vscode：Vs code官网安装插件：Live Server（本地服务器方便开发）、Vetur（vue关键字高亮度）、Vue.js with TypeScrpit Snippets for VSCode2、安装脚手架：
+
+安装node.js node.js官网 
+查看脚手架版本（CMD）：node -v
+查看npm版本：npm -vnpm插件官网（所有的插件都可在此网站找到）：npm插件网
+vue CUI::VUE CUI官网
+全局：npm install -g @vue&#x2F;cli
+淘宝提供的服务器：npm install -g cnpm –registry&#x3D;https://registry.npm.taobao.org
+查看所有命令：vue –help
+创建vue项目 ：vue create hello-world(vue ui:视图创建)
+选择目录：cd 路径
+
+
+项目发布：npm run serve
+
+
+
+Vue Cli(脚手架)开发一般公司不会用CDN，而是使用Vue Cli进行开发。
+
+脚手架需要的环境：
+ ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/11/26/Android%E6%9D%83%E9%99%90%E4%BB%A3%E7%A0%81/" title="Android权限代码">Android权限代码</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-11-26T09:04:20.000Z" title="发表于 2023-11-26 17:04:20">2023-11-26</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Android/">Android</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Android/">Android</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/Java/">Java</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/APP/">APP</a></span></div><div class="content">
+Android权限代码：1.android.permission.WRITE_USER_DICTIONARY允许应用程序向用户词典中写入新词
+2.android.permission.WRITE_SYNC_SETTINGS写入Google在线同步设置
+3.android.permission.WRITE_SOCIAL_STREAM读取用户的社交信息流
+4.android.permission.WRITE_SMS允许程序写短信
+5.android.permission.WRITE_SETTINGS允许程序读取或写入系统设置
+6.android.permission.WRITE_SECURE_SETTINGS允许应用程序读取或写入安全系统设置
+7.android.permission.WRITE_PROFILE允许程序写入个人资料数据
+8.com.android.browser.permission.WRITE_HISTORY_BOOKMARKS允许一个应用程序写(但不可读)用户的浏览历史和书签
+9.android.permission.WRITE_GSERVICES允许程序修改Goog ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/11/26/Android%E4%B9%8BContentProvite%E7%BB%84%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8/" title="Android之ContentProvite组件的使用">Android之ContentProvite组件的使用</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-11-26T08:56:50.000Z" title="发表于 2023-11-26 16:56:50">2023-11-26</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Android/">Android</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Android/">Android</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/Java/">Java</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/APP/">APP</a></span></div><div class="content">
+
+
+ContentProvite组件的使用
+实例：
+activiy:
+
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114115116117public class MainActivity extends AppCompatActivity &#123;    private ListView MainActivity_listview;    private List&lt;User&gt; listdata=new ArrayList&lt;&gt;();    List&lt;Map&lt;String, Object&gt;&gt; listmap=new Arr ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/11/26/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%EF%BC%88spring-boot-JWT-vue%EF%BC%89/" title="前后端分离（spring boot+JWT+vue）">前后端分离（spring boot+JWT+vue）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-11-26T08:53:36.000Z" title="发表于 2023-11-26 16:53:36">2023-11-26</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E6%96%B9%E6%A1%88/">前后端分离方案</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%89%8D%E7%AB%AF/">前端</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E6%96%B9%E6%A1%88/">前后端分离方案</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E5%90%8E%E7%AB%AF/">后端</a></span></div><div class="content">
+
+
+前后端分离思想：让专业的人做专业的事
+
+前端：Vue
+使用SessionStorage存储token
+
+
+后端：Spring Boot：
+JWT权限校验
+
+
+
+vue插件Element ui的使用：在vue项目中添加Element UI 插件：1、vue ui添加插件Element ui插件2、使用命令安装：npm install –save element-ui或者cnpm install –save element-ui
+Element UI 使用可以直接看Element ui的官网：https://element.eleme.cn/#/zh-CN/component/container
+Element UI 标签介绍
+el-container：构建整个页面框架（相当于div）
+el-aside：构建左侧菜单
+el-menu：左侧菜单内容  - :default-openeds：默认展开的菜单，通过菜单的index值来管理  - :default-active：默认选中的菜单，通过菜单的index值来关联
+el-submenu：可展开的菜单，常用属性（el-submenu可以 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/11/26/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AD%A6%E4%B9%A0/" title="微信小程序学习">微信小程序学习</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-11-26T07:02:21.000Z" title="发表于 2023-11-26 15:02:21">2023-11-26</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">微信小程序</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/">小程序</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">微信小程序</a></span></div><div class="content">
+
+
+微信小程序官网
+小程序代码构成:微信小程序官网
+
+
+项目文件类型:1、.json 后缀的 JSON 配置文件2、.wxml 后缀的 WXML 模板文件 &#x3D;&#x3D;&gt; HTML3、.wxss 后缀的 WXSS 样式文件 &#x3D;&#x3D;&gt; CSS4、.js 后缀的 JS 脚本逻辑文件 &#x3D;&#x3D;&gt; js
+一、WXML 模板1、标签名字有点不一样：WXML 用的标签是 view, button, text2、多了一些 wx:if 这样的属性以及 &#123;&#123; &#125;&#125; 这样的表达式3、大小写敏感
+JSON 语法JSON的值只能是以下几种数据格式：1、数字，包含浮点数和整数2、字符串，需要包裹在双引号中3、Bool值，true 或者 false4、数组，需要包裹在方括号中 []5、对象，需要包裹在大括号中 {}6、Null还需要注意的是 JSON 文件中无法使用注释，试图添加注释将会引发报错。
+属性：navigationBarTitleText：小程序标题共同属性：
+控件button、image、view ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/#content-inner">3</a><a class="extend next" rel="next" href="/page/3/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/images/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Docker</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">26</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">24</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">19</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/liuwenzhensunniwell"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/liuwenzhensunniwell" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:xxxxxx@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/11/26/Java%E5%BE%AE%E6%9C%8D%E5%8A%A1/" title="Java微服务">Java微服务</a><time datetime="2023-11-26T12:23:18.000Z" title="发表于 2023-11-26 20:23:18">2023-11-26</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/11/26/HttpURLConnection%E5%92%8COKHTTP%E7%9A%84%E4%BD%BF%E7%94%A8/" title="HttpURLConnection和OKHTTP的使用">HttpURLConnection和OKHTTP的使用</a><time datetime="2023-11-26T12:20:00.000Z" title="发表于 2023-11-26 20:20:00">2023-11-26</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/11/26/Service%E7%BB%84%E4%BB%B6/" title="Service组件">Service组件</a><time datetime="2023-11-26T12:19:04.000Z" title="发表于 2023-11-26 20:19:04">2023-11-26</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/11/26/Android%E6%B6%88%E6%81%AF%E6%9C%BA%E5%88%B6/" title="Android消息机制">Android消息机制</a><time datetime="2023-11-26T12:08:01.000Z" title="发表于 2023-11-26 20:08:01">2023-11-26</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/11/26/JavaScript/" title="JavaScript">JavaScript</a><time datetime="2023-11-26T11:50:33.000Z" title="发表于 2023-11-26 19:50:33">2023-11-26</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            <a class="card-more-btn" href="/categories/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a>
+            </div>
+            <ul class="card-category-list expandBtn" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Android/"><span class="card-category-list-name">Android</span><span class="card-category-list-count">6</span></a></li><li class="card-category-list-item parent"><a class="card-category-list-link" href="/categories/Java/"><span class="card-category-list-name">Java</span><span class="card-category-list-count">7</span><i class="fas fa-caret-left expand"></i></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Java/Java%E5%9F%BA%E7%A1%80/"><span class="card-category-list-name">Java基础</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Java/Java%E5%BE%AE%E6%9C%8D%E5%8A%A1/"><span class="card-category-list-name">Java微服务</span><span class="card-category-list-count">1</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Java/Java%E5%BE%AE%E6%9C%8D%E5%8A%A1/Java%E6%A1%86%E6%9E%B6/"><span class="card-category-list-name">Java框架</span><span class="card-category-list-count">1</span></a></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Java/Mybatis/"><span class="card-category-list-name">Mybatis</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Java/Spring/"><span class="card-category-list-name">Spring</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Java/Spring-Boot/"><span class="card-category-list-name">Spring Boot</span><span class="card-category-list-count">1</span></a></li></ul></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/Android/" style="font-size: 1.4em; color: rgb(14, 153, 46)">Android</a><a href="/tags/Java/" style="font-size: 1.45em; color: rgb(164, 92, 76)">Java</a><a href="/tags/APP/" style="font-size: 1.4em; color: rgb(191, 29, 159)">APP</a><a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 1.35em; color: rgb(84, 87, 34)">前端</a><a href="/tags/Java-Web/" style="font-size: 1.15em; color: rgb(107, 74, 125)">Java Web</a><a href="/tags/Java%E5%9F%BA%E7%A1%80/" style="font-size: 1.15em; color: rgb(178, 101, 81)">Java基础</a><a href="/tags/JavaScript/" style="font-size: 1.15em; color: rgb(5, 171, 169)">JavaScript</a><a href="/tags/Mybatis/" style="font-size: 1.15em; color: rgb(124, 46, 154)">Mybatis</a><a href="/tags/Spring-Boot/" style="font-size: 1.15em; color: rgb(88, 73, 178)">Spring Boot</a><a href="/tags/Java%E6%A1%86%E6%9E%B6/" style="font-size: 1.3em; color: rgb(164, 156, 31)">Java框架</a><a href="/tags/Spring/" style="font-size: 1.15em; color: rgb(106, 56, 122)">Spring</a><a href="/tags/Spring-MVC/" style="font-size: 1.15em; color: rgb(113, 172, 142)">Spring MVC</a><a href="/tags/Vue/" style="font-size: 1.2em; color: rgb(140, 66, 194)">Vue</a><a href="/tags/Java%E5%BE%AE%E6%9C%8D%E5%8A%A1/" style="font-size: 1.15em; color: rgb(24, 190, 198)">Java微服务</a><a href="/tags/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E6%96%B9%E6%A1%88/" style="font-size: 1.2em; color: rgb(35, 125, 93)">前后端分离方案</a><a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 1.2em; color: rgb(43, 164, 198)">数据库</a><a href="/tags/%E5%88%86%E5%B8%83%E5%BC%8F/" style="font-size: 1.25em; color: rgb(184, 129, 134)">分布式</a><a href="/tags/maven/" style="font-size: 1.15em; color: rgb(26, 171, 33)">maven</a><a href="/tags/%E9%97%AE%E9%A2%98%E9%9B%86/" style="font-size: 1.15em; color: rgb(13, 160, 127)">问题集</a><a href="/tags/%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/" style="font-size: 1.15em; color: rgb(173, 142, 152)">技术方案</a><a href="/tags/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/" style="font-size: 1.15em; color: rgb(133, 185, 43)">响应式布局</a><a href="/tags/%E5%90%8E%E7%AB%AF/" style="font-size: 1.15em; color: rgb(64, 3, 147)">后端</a><a href="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/" style="font-size: 1.15em; color: rgb(130, 189, 178)">小程序</a><a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/" style="font-size: 1.15em; color: rgb(58, 152, 179)">微信小程序</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/11/"><span class="card-archive-list-date">十一月 2023</span><span class="card-archive-list-count">26</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">26</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-11-26T12:38:43.570Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By Docker</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>window.typedJSFn = {
+  init: (str) => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: (subtitleType) => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        getScript('https://cdn.jsdelivr.net/npm/typed.js/dist/typed.umd.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  }
+}
+</script><script>function subtitleType () {
+  if (true) {
+    typedJSFn.init(["长风破浪会有时，直挂云帆济沧海。"])
+  } else {
+    document.getElementById("subtitle").textContent = "长风破浪会有时，直挂云帆济沧海。"
+  }
+}
+typedJSFn.run(subtitleType)</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
